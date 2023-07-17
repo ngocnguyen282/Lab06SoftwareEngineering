@@ -1,15 +1,9 @@
 # Ngoc Nguyen
 
+# shift each digit up by 3 numbers
 def encode(password_to_encode):
     encoded_password = [str(int(i) + 3) for i in password_to_encode]
     res = ''.join(encoded_password)
-
-    return res
-
-
-def decode(password_to_decode):
-    decoded_password = [str(int(i) - 3) for i in password_to_decode]
-    res = ''.join(decoded_password)
 
     return res
 
@@ -38,8 +32,7 @@ def main():
             encode(original_password)
             print('Your password has been encoded and stored!')
         elif user_option == '2':
-            print(f'The encoded password is {encode(original_password)}, '
-                  f'and the original password is {decode(encode(original_password))}.')
+            pass
 
 
 if __name__ == '__main__':
