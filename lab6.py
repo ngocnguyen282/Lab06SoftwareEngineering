@@ -1,3 +1,6 @@
+# repo link:
+# https://github.com/ngocnguyen282/Lab06SoftwareEngineering
+
 # Ngoc Nguyen
 # Alissa Adams
 
@@ -30,7 +33,7 @@ def display_menu():
 
 
 def main():
-    original_password = None
+    encoded_password = None
 
     while True:
         # display menu & prompt for user option
@@ -43,7 +46,8 @@ def main():
             encoded_password = encode(original_password)
             print('Your password has been encoded and stored!')
         elif user_option == '2':
-            print(f'The encoded password is {encoded_password}, and the original password is {decode(encoded_password)}.')
+            print(f'The encoded password is {encoded_password}, and the '
+                  f'original password is {decode(encoded_password)}.')
 
 
 if __name__ == '__main__':
